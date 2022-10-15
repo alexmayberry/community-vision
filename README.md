@@ -15,8 +15,8 @@
 - Verify users as experts
   
   
-  ### Third Party APIs
-  - TBD
+### Third Party APIs
+- TBD
 
 
 ### Inspiration
