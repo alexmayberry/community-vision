@@ -1,8 +1,6 @@
 # BudgetBuilder
-## Budget building, comparing and negotiating
 
-### Purpose
-- Create, collaborate, and gather feedback on budgets for multi-stakeholder public projects in the style of github.
+### Create, collaborate, and gather feedback on budgets for multi-stakeholder public projects in the style of github.
 
 
 ### As a User, I want to:
