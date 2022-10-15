@@ -17,3 +17,8 @@
   
   ### Third Party APIs
   - TBD
+
+
+### Inspiration
+- [Pol.is](https://pol.is/)
+- [Github](https://github.com/)
