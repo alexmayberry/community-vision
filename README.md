@@ -1,6 +1,6 @@
 # BudgetBuilder
 
-### Create, collaborate, and gather feedback on budgets for multi-stakeholder public projects in the style of github.
+### Create, collaborate, and gather feedback on budgets for multi-stakeholder public projects by applying the collaborative power of Github's UX to public policy.
 
 
 ### As a User, I want to:
