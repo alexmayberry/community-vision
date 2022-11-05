@@ -1,5 +1,10 @@
 const { Schema, model } = require('mongoose');
 
+const input_reqsSchema = new Schema({
+    names: [ String ],
+    descriptions: [ String ],
+});
+
 const projectSchema = new Schema({
     title: {
         type: String,
@@ -18,9 +23,20 @@ const projectSchema = new Schema({
         type: Date,
         require: false
     },
-    project_reqs: {
-        // how to define a field that is an array of strings?
-    }
+    project_reqs: [ String ],
+    input_reqs: input_reqsSchema,
+    image_urls: [ String ],
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+      },
+    // Store all of the associated child inputs in an array
+    inputs: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'Input',
+        },
+      ],
 });
 
 const Project = model('Project', projectSchema);
