@@ -14,7 +14,7 @@
         "Restroom building should not be relocated, but the interior can be renovated and reconfigured.",
         "Other existing park functions and elements may be kept, and new functions and elements may be suggested. However, the implementation of selected ideas will be subject to funding being available."
     ],
-    "input_reqs": {
+    "brief_reqs": {
         "names": [ 
         "Introduction",
         "Project Summary",
@@ -27,7 +27,7 @@
         ]
     },
     "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"],
-    "inputs": [
+    "briefs": [
         "63573373b7503ffea3be2a8f",
         "63573373b7503ffea3be2a8f",
         "63573373b7503ffea3be2a8f"

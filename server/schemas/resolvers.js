@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Timeline } = require('../models');
+const { User, Brief, Project } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -19,6 +19,13 @@ const resolvers = {
               .select("-password")
               .populate('timeline');
     },
+    briefs: async () => {
+      return await Brief.find({}).populate('user').populate('project');
+    },
+    // LUNCH BREAK STOPPING POINT
+    brief: async (parent, args, context) => {
+      return await Brief.findById( args.id ).populate('user').populate('project');
+    }
   },
 
   Mutation: {
@@ -44,19 +51,19 @@ const resolvers = {
 
       return { token, user };
     },
-    addTimeline: async (parent, { entry }, { user }) => {
+    // addTimeline: async (parent, { entry }, { user }) => {
 
-      if(!user) {
-        throw new AuthenticationError('Must be logged in to create timeline entries');
-      }
+    //   if(!user) {
+    //     throw new AuthenticationError('Must be logged in to create timeline entries');
+    //   }
 
-      const timeline = await Timeline.create({ ...entry });
+    //   const timeline = await Timeline.create({ ...entry });
 
-      await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { timeline: timeline._id } });
+    //   await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { timeline: timeline._id } });
 
-      return timeline;
+    //   return timeline;
 
-    }
+    // }
   },
 };
 

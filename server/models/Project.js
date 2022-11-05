@@ -1,8 +1,18 @@
 const { Schema, model } = require('mongoose');
 
-const input_reqsSchema = new Schema({
-    names: [ String ],
-    descriptions: [ String ],
+const brief_reqsSchema = new Schema({
+    names: [
+        {
+            type: String,
+            require: true
+        }
+        ],
+    descriptions: [
+        {
+            type: String,
+            require: true
+        }
+        ],
 });
 
 const projectSchema = new Schema({
@@ -11,30 +21,36 @@ const projectSchema = new Schema({
         require: true
     },
     intro: {
-        type: String
+        type: String,
+        require: true
     },
     budget_description: {
         type: String
     },
     project_description: {
-        type: String
+        type: String,
+        require: true
     },
     submission_deadline: {
         type: Date,
-        require: false
     },
-    project_reqs: [ String ],
-    input_reqs: input_reqsSchema,
+    project_reqs: [ 
+        {
+            type: String,
+            require: true
+        } 
+    ],
+    brief_reqs: brief_reqsSchema,
     image_urls: [ String ],
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
       },
-    // Store all of the associated child inputs in an array
-    inputs: [
+    // Store all of the associated child briefs in an array
+    briefs: [
         {
           type: Schema.Types.ObjectId,
-          ref: 'Input',
+          ref: 'Brief',
         },
       ],
 });
