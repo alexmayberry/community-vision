@@ -8,11 +8,6 @@ const typeDefs = gql`
     briefs: [Brief]
   }
 
-  type Brief_reqs {
-    names: [ String ]!
-    descriptions: [ String ]!
-  }
-
   type Project {
     _id: ID!
     title: String!
@@ -21,21 +16,16 @@ const typeDefs = gql`
     project_description: String!
     submission_deadline: String
     project_reqs: [String]!
-    brief_reqs: Brief_reqs!
+    brief_reqs: [String]!
     image_urls: [ String ]
     user: User
     briefs: [Brief]
   }
 
-  type Brief_content {
-    names: [ String ]!
-    content: [ String ]!
-  }
-
   type Brief {
     _id: ID
     title: String!
-    brief_content: Brief_content! #unsure about this syntax for the subdocument typedef
+    brief_content: [String]!
     image_urls: [String]
     date_created: String
     user: User
@@ -44,11 +34,19 @@ const typeDefs = gql`
 
   input inputBrief {
     title: String!
-    brief_content: [Brief_content]! #unsure about this syntax for the subdocument typedef
+    brief_content: [String]! 
     image_urls: [String]
-    date_created: String
-    user: User
-    project: Project
+  }
+
+  input inputProject {
+    title: String!
+    intro: String!
+    budget_description: String
+    project_description: String!
+    submission_deadline: String
+    project_reqs: [String]!
+    brief_reqs: [String]!
+    image_urls: [ String ]
   }
 
   type Auth {
@@ -71,6 +69,8 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addBrief(entry: inputBrief): Brief
     removeBrief(briefId: ID!): Brief
+    addProject(entry: inputProject): Project
+    removeProject(projectId: ID!): Project
   }
 `;
 

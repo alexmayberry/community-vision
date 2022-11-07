@@ -1,20 +1,5 @@
 const { Schema, model } = require('mongoose');
 
-const brief_reqsSchema = new Schema({
-    names: [
-        {
-            type: String,
-            require: true
-        }
-        ],
-    descriptions: [
-        {
-            type: String,
-            require: true
-        }
-        ],
-});
-
 const projectSchema = new Schema({
     title: {
         type: String,
@@ -40,7 +25,12 @@ const projectSchema = new Schema({
             require: true
         } 
     ],
-    brief_reqs: brief_reqsSchema,
+    brief_reqs: [ 
+        {
+            type: String,
+            require: true
+        } 
+    ],
     image_urls: [ String ],
     user: {
         type: Schema.Types.ObjectId,

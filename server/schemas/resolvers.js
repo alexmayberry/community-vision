@@ -20,11 +20,14 @@ const resolvers = {
               .populate('timeline');
     },
     briefs: async () => {
-      return await Brief.find({}).populate('user').populate('project');
+      return await Brief.find({})
+      .populate('user')
+      .populate('project');
     },
-    // LUNCH BREAK STOPPING POINT
     brief: async (parent, args, context) => {
-      return await Brief.findById( args.id ).populate('user').populate('project');
+      return await Brief.findById( args.id )
+      .populate('user')
+      .populate('project');
     }
   },
 
@@ -51,19 +54,20 @@ const resolvers = {
 
       return { token, user };
     },
-    // addTimeline: async (parent, { entry }, { user }) => {
+    // { entry } from args and { user } from context
+    addProject: async (parent, { entry }, { user }) => {
 
-    //   if(!user) {
-    //     throw new AuthenticationError('Must be logged in to create timeline entries');
-    //   }
+      if(!user) {
+        throw new AuthenticationError('Must be logged in to create timeline entries');
+      }
 
-    //   const timeline = await Timeline.create({ ...entry });
+      const project = await Project.create({ ...entry });
 
-    //   await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { timeline: timeline._id } });
+      await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { Project: project._id } });
 
-    //   return timeline;
+      return project;
 
-    // }
+    }
   },
 };
 

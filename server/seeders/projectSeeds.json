@@ -14,18 +14,11 @@
         "Restroom building should not be relocated, but the interior can be renovated and reconfigured.",
         "Other existing park functions and elements may be kept, and new functions and elements may be suggested. However, the implementation of selected ideas will be subject to funding being available."
     ],
-    "brief_reqs": {
-        "names": [ 
-        "Introduction",
-        "Project Summary",
-        "Design Statement"
-        ],
-        "descriptions": [
-            "Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
-            "Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
-            "Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
-        ]
-    },
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
     "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"],
     "briefs": [
         "63573373b7503ffea3be2a8f",
