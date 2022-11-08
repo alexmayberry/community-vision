@@ -17,7 +17,7 @@ const resolvers = {
 
       return User.findOne({ _id: context.user._id })
               .select("-password")
-              .populate('timeline');
+              .populate('brief');
     },
     briefs: async () => {
       return await Brief.find({})
@@ -28,12 +28,18 @@ const resolvers = {
       return await Brief.findById( args.id )
       .populate('user')
       .populate('project');
+    },
+    project: async (parent, args, context) => {
+      return await Project.find({})
+        .populate('user')
+        .populate('brief')
     }
   },
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
-      const user = await User.create({ username, email, password }).select("-password");
+      const user = await User.create({ username, email, password })
+      // .select("-password");
       const token = signToken(user);
       return { token, user };
     },
@@ -58,7 +64,7 @@ const resolvers = {
     addProject: async (parent, { entry }, { user }) => {
 
       if(!user) {
-        throw new AuthenticationError('Must be logged in to create timeline entries');
+        throw new AuthenticationError('Must be logged in to create Brief entries');
       }
 
       const project = await Project.create({ ...entry });
