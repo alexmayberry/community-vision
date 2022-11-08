@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Timeline } = require('../models');
+const { User, Brief, Project } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -17,13 +17,29 @@ const resolvers = {
 
       return User.findOne({ _id: context.user._id })
               .select("-password")
-              .populate('timeline');
+              .populate('brief');
     },
+    briefs: async () => {
+      return await Brief.find({})
+      .populate('user')
+      .populate('project');
+    },
+    brief: async (parent, args, context) => {
+      return await Brief.findById( args.id )
+      .populate('user')
+      .populate('project');
+    },
+    project: async (parent, args, context) => {
+      return await Project.find({})
+        .populate('user')
+        .populate('brief')
+    }
   },
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
-      const user = await User.create({ username, email, password }).select("-password");
+      const user = await User.create({ username, email, password })
+      // .select("-password");
       const token = signToken(user);
       return { token, user };
     },
@@ -44,17 +60,18 @@ const resolvers = {
 
       return { token, user };
     },
-    addTimeline: async (parent, { entry }, { user }) => {
+    // { entry } from args and { user } from context
+    addProject: async (parent, { entry }, { user }) => {
 
       if(!user) {
-        throw new AuthenticationError('Must be logged in to create timeline entries');
+        throw new AuthenticationError('Must be logged in to create Brief entries');
       }
 
-      const timeline = await Timeline.create({ ...entry });
+      const project = await Project.create({ ...entry });
 
-      await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { timeline: timeline._id } });
+      await User.findOneAndUpdate({ _id: user._id }, { $addToSet: { Project: project._id } });
 
-      return timeline;
+      return project;
 
     }
   },

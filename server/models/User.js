@@ -19,10 +19,10 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  inputs: [
+  briefs: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'Input',
+      ref: 'Brief',
     },
   ],
 });

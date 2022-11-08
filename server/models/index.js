@@ -1,4 +1,5 @@
 const User = require('./User');
-const Timeline = require('./Timeline');
+const Project = require('./Project');
+const Brief = require('./Brief');
 
-module.exports = { User, Timeline };
+module.exports = { User, Project, Brief };

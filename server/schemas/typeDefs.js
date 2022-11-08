@@ -2,27 +2,51 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
   type User {
-    _id: ID
+    _id: ID!
     username: String
     email: String
-    timeline: [Timeline]
+    briefs: [Brief]
   }
 
-  type Timeline {
-    _id: ID,
-    name: String
-    description: String
-    startDate: String
-    endDate: String
-    isPresent: Boolean
+  type Project {
+    _id: ID!
+    title: String!
+    intro: String!
+    budget_description: String
+    project_description: String!
+    submission_deadline: String
+    project_reqs: [String]!
+    brief_reqs: [String]!
+    image_urls: [ String ]
+    user: User
+    briefs: [Brief]
   }
 
-  input TimelineInput {
-    name: String!
-    description: String
-    startDate: String!
-    endDate: String
-    isPresent: Boolean
+  type Brief {
+    _id: ID
+    title: String!
+    brief_content: [String]!
+    image_urls: [String]
+    date_created: String
+    user: User
+    project: Project
+  }
+
+  input inputBrief {
+    title: String!
+    brief_content: [String]! 
+    image_urls: [String]
+  }
+
+  input inputProject {
+    title: String!
+    intro: String!
+    budget_description: String
+    project_description: String!
+    submission_deadline: String
+    project_reqs: [String]!
+    brief_reqs: [String]!
+    image_urls: [ String ]
   }
 
   type Auth {
@@ -34,12 +58,19 @@ const typeDefs = gql`
     # users: [User]
     user(username: String!): User
     me: User
+    briefs: [Brief]!
+    brief(briefId: ID!): Brief
+    projects: [Project]!
+    project(projectID: ID!): Project
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addTimeline(entry: TimelineInput): Timeline
+    addBrief(entry: inputBrief): Brief
+    removeBrief(briefId: ID!): Brief
+    addProject(entry: inputProject): Project
+    removeProject(projectId: ID!): Project
   }
 `;
 
