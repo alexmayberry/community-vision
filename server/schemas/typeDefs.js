@@ -6,36 +6,59 @@ const typeDefs = gql`
     username: String
     email: String
     briefs: [Brief]
+    projects: [Project]
+  }
+
+  type SimpleUser {
+    _id: ID!
+    username: String
+    email: String
   }
 
   type Project {
     _id: ID!
-    title: String!
-    intro: String!
+    title: String
+    intro: String
     budget_description: String
-    project_description: String!
+    project_description: String
     submission_deadline: String
-    project_reqs: [String]!
+    project_reqs: [String]
+    brief_reqs: [String]
+    image_urls: [ String ]
+    user: SimpleUser
+    briefs: [Brief]
+  }
+
+  type UserProject {
+    _id: ID!
+    title: String
+    intro: String
+    budget_description: String
+    project_description: String
+    submission_deadline: String
+    project_reqs: [String]
     brief_reqs: [String]!
     image_urls: [ String ]
-    user: User
+    user: SimpleUser
     briefs: [Brief]
   }
 
   type Brief {
-    _id: ID
-    title: String!
-    brief_content: [String]!
+    _id: ID!
+    title: String
+    brief_content: [String]
     image_urls: [String]
     date_created: String
-    user: User
+    user: SimpleUser
     project: Project
   }
 
+
   input inputBrief {
-    title: String!
-    brief_content: [String]! 
+    title: String
+    brief_content: [String]
     image_urls: [String]
+    project: ID
   }
 
   input inputProject {
@@ -55,18 +78,19 @@ const typeDefs = gql`
   }
 
   type Query {
-    # users: [User]
+    users: [User]
     user(username: String!): User
     me: User
-    briefs: [Brief]!
+    briefs: [Brief]
     brief(briefId: ID!): Brief
-    projects: [Project]!
+    projects: [Project]
     project(projectID: ID!): Project
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    removeUser(userId: ID!): User
     addBrief(entry: inputBrief): Brief
     removeBrief(briefId: ID!): Brief
     addProject(entry: inputProject): Project

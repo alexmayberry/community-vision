@@ -7,7 +7,6 @@ const projectSchema = new Schema({
     },
     intro: {
         type: String,
-        require: true
     },
     budget_description: {
         type: String

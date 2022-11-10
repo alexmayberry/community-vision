@@ -3,7 +3,6 @@ const { Schema, model } = require('mongoose');
 const briefSchema = new Schema({
     title: {
         type: String,
-        required: true
     },
     brief_content: [ 
         {
