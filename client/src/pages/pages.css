@@ -4,6 +4,7 @@
 
 #projects-card {
     border-radius: 0%;
+    margin-bottom: 13%;
 }
 
 .card img {
@@ -15,7 +16,6 @@
     margin: auto;
     height: 7rem;
     border-bottom: 1px solid black;
-    margin-bottom: 1rem;
     background-color:honeydew;
 }
 
@@ -24,19 +24,54 @@
 }
 
 #projects-container {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 7%;
+    margin-top: 3%;
 }
 
 #title {
-    width: 75vw;
+    width: 100%;
+    justify-content:center;
+}
+
+.name-tag {
+    padding-right: 50px;
+}
+
+#auth-btns {
+    width: 35%;
 }
 
 .btn {
     border: 1px solid black;
     text-decoration: none;
+    width: 100%;
+}
+
+.main-btn {
+    width: 42%;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+#project-tag {
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+#brief-tag {
+    color: black;
+    text-align: center;
+}
+
+#signup-page {
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+#login-page {
+    margin-top: 3%;
+    margin-left: 15%;
 }

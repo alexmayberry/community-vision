@@ -9,30 +9,30 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header id="header" className="text-dark flex-row align-center">
-      <div id="title" className="container flex-row justify-space-around-lg justify-center align-center m-auto">
+    <header id="header" className="text-dark flex-row">
+      <div id="title" className="flex-row align-center justify-center">
         <div>
           <Link className="text-dark" to="/">
-            <h1 className="m-0">COMMUNITY VISION</h1>
+            <h1 className="name-tag m-0">COMMUNITY VISION</h1>
           </Link>
-          <p className="m-0">Projects with Community Input</p>
+          <p className="name-tag m-0">Projects with Community Input</p>
         </div>
-        <div>
+        <div id="auth-btns">
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/me">
+              <Link className="main-btn btn btn-sm btn-info m-3" to="/me">
                 {Auth.getProfile().data.username}'s profile
               </Link>
-              <button className="btn btn-lg btn-primary m-2" onClick={logout}>
+              <button className="main-btn btn btn-sm btn-primary m-3" onClick={logout}>
                 Logout
               </button>
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-primary btn-border-1 m-2" to="/login">
+              <Link className="main-btn btn btn-sm btn-primary btn-border-1 m-3" to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg btn-secondary btn-border-1 m-2" to="/signup">
+              <Link className="main-btn btn btn-sm btn-secondary btn-border-1 m-3" to="/signup">
                 Signup
               </Link>
             </>
