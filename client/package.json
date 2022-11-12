@@ -17,7 +17,7 @@
     "web-vitals": "^0.2.4",
     "bootstrap": "^5.2.2",
     "react-bootstrap": "^2.6.0",
-    "react-burger-menu": "^3.0.8",
+    "react-burger-menu": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
