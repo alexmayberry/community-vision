@@ -1,0 +1,42 @@
+#col {
+    margin: auto;
+}
+
+#projects-card {
+    border-radius: 0%;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#header {
+    margin: auto;
+    height: 7rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    background-color:honeydew;
+}
+
+#project-container {
+    width: 100vw;
+}
+
+#projects-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#title {
+    width: 75vw;
+}
+
+.btn {
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
