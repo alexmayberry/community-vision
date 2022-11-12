@@ -87,8 +87,7 @@ const resolvers = {
       }
 
       const project = await Project.create(
-        { ...entry, user: user,
-        }, 
+        { ...entry, user: user }, 
         );
 
       await User.findOneAndUpdate(

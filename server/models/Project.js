@@ -30,7 +30,7 @@ const projectSchema = new Schema({
             require: true
         } 
     ],
-    image_urls: [ String ],
+    image_url: String,
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',

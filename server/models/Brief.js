@@ -10,7 +10,7 @@ const briefSchema = new Schema({
             require: true
         } 
     ],
-    image_urls: [String],
+    image_url: String,
     date_created: {
         type: Date,
         default: Date.now,

@@ -1,15 +1,18 @@
 const db = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Project, Brief } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const projectSeeds = require('./projectSeeds.json');
+const briefSeeds = require('./briefSeeds.json');
 
 db.once('open', async () => {
   try {
+    await Brief.deleteMany({});
     await Project.deleteMany({});
     await User.deleteMany({});
-
-    await Project.create(projectSeeds);
+    
     await User.create(userSeeds);
+    await Project.create(projectSeeds);
+    await Brief.create(briefSeeds);
 
     // for (let i = 0; i < thoughtSeeds.length; i++) {
     //   const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
@@ -22,6 +25,23 @@ db.once('open', async () => {
     //     }
     //   );
     // }
+
+    // // Project <-> User
+
+    // // set user for projects
+    // for projectSeed.length
+    // $set user: userSeed[4]._id
+    //
+    // // set projects for user
+    // for projects.length 
+    // find userSeed[4]
+    // $addToSet projects: project._id
+
+    // // Project <-> Brief
+  
+    // // set set briefs in project
+    // if 
+
   } catch (err) {
     console.error(err);
     process.exit(1);

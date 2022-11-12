@@ -24,7 +24,7 @@ const typeDefs = gql`
     submission_deadline: String
     project_reqs: [String]
     brief_reqs: [String]
-    image_urls: [ String ]
+    image_url: String 
     user: SimpleUser
     briefs: [Brief]
   }
@@ -38,7 +38,7 @@ const typeDefs = gql`
     submission_deadline: String
     project_reqs: [String]
     brief_reqs: [String]!
-    image_urls: [ String ]
+    image_url: String
     user: SimpleUser
     briefs: [Brief]
   }
@@ -47,7 +47,7 @@ const typeDefs = gql`
     _id: ID!
     title: String
     brief_content: [String]
-    image_urls: [String]
+    image_url: String
     date_created: String
     user: SimpleUser
     project: Project
@@ -57,7 +57,7 @@ const typeDefs = gql`
   input inputBrief {
     title: String
     brief_content: [String]
-    image_urls: [String]
+    image_url: String
     project: ID
   }
 
@@ -69,7 +69,7 @@ const typeDefs = gql`
     submission_deadline: String
     project_reqs: [String]!
     brief_reqs: [String]!
-    image_urls: [ String ]
+    image_url: String
   }
 
   type Auth {
