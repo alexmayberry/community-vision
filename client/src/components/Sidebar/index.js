@@ -10,6 +10,7 @@ import './sidebar.css';
 const Sidebar = () => {
   return (
     <Menu>
+       <Button variant="primary"><Link to="../pages/NewBrief">New Brief</Link></Button>
      <Card style={{ width: '15.5rem' }}>
       <Card.Img id="nav-image" variant="top" src="https://bergerpartnership.com/wp-content/uploads/2016/05/Project-page-feature-image-Cal-Anderson.jpg" />
       <Card.Body>

@@ -5,7 +5,6 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import "./pages.css";
 
-
 // import { useMutation } from '@apollo/client';
 // import { ADD_USER } from '../utils/mutations';
 
@@ -71,7 +70,7 @@ const NewBrief = () => {
               <input
                 className="form-input"
                 placeholder="brief content"
-                name="content"
+                name="brief_content"
                 type="text"
                 //   value={formState.password}
                 //   onChange={handleChange}
