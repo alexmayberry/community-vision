@@ -22,10 +22,10 @@ function NewBrief() {
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Brief Title</Form.Label>
               <Form.Control
-                type="email"
-                placeholder="name@example.com"
+                type="text"
+                placeholder="Brief Title"
                 autoFocus
               />
             </Form.Group>
@@ -33,9 +33,20 @@ function NewBrief() {
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Label>Brief Content</Form.Label>
+              <Form.Control 
+              type="text"
+              as="textarea" 
+              rows={24}
+              placeholder="Brief Content" />
             </Form.Group>
+            <div>
+            <ImageUpload
+                cloud_name={cld.cloudinaryConfig.dkrgydudr}
+                upload_preset={cld.cloudinaryConfig.nmqlk7x4}
+                onImageUpload={(publicId) => onImageUploadHandler(publicId)}
+              />
+            </div>
           </Form>
         </Modal.Body>
         <Modal.Footer>
