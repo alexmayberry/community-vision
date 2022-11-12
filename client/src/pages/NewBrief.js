@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useState} from 'react';
+
+import { Cloudinary } from "@cloudinary/url-gen";
+import ImageUpload from "../components/ImageUpload";
 
 // import Card from "react-bootstrap/Card";
 // import Button from "react-bootstrap/Button";
@@ -26,11 +29,8 @@ import "./pages.css";
 //       [name]: value,
 //     });
 //   };
+  
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    // console.log(formState);
-  }
 //     try {
 //       const { data } = await addUser({
 //         variables: { ...formState },
@@ -44,6 +44,25 @@ import "./pages.css";
 // }
 
 const NewBrief = () => {
+  
+const [imagesUploadedList, setImagesUploadedList] = useState([]);  
+
+
+const cld = new Cloudinary({
+  cloud: {
+    cloud_name: "cloud_name", //Your cloud name
+    upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this
+  }
+});
+const onImageUploadHandler = (publicId) => {
+  setImagesUploadedList((prevState) => [...prevState, publicId]);
+};
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    // console.log(formState);
+  }
+
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
@@ -75,6 +94,11 @@ const NewBrief = () => {
                 //   value={formState.password}
                 //   onChange={handleChange}
               />
+              <ImageUpload
+                cloud_name={cld.cloudinaryConfig.dkrgydudr}
+                upload_preset={cld.cloudinaryConfig.nmqlk7x4}
+                onImageUpload={(publicId) => onImageUploadHandler(publicId)}
+              />
               <button
                 className="btn btn-block btn-primary"
                 style={{ cursor: "pointer" }}
@@ -84,6 +108,7 @@ const NewBrief = () => {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </main>
