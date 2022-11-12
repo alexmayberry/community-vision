@@ -16,7 +16,8 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import NewBrief from'./pages/NewBrief';
+
 
 
 // Construct our main GraphQL API endpoint
@@ -67,6 +68,10 @@ function App() {
               <Route 
                 path="/brief"
                 element={<Brief />}
+              />
+              <Route 
+                path="/newbrief"
+                element={<NewBrief />}
               />
               <Route 
                 path="/login"

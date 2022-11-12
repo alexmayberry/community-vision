@@ -8,23 +8,20 @@ import Sidebar from "../components/Sidebar";
 import "../components/Sidebar/sidebar.css";
 import Project from './Project';
 import Brief from './Brief';
-import NewBrief from './NewBrief'
-// import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <Container id="project-container">
       <div id="sidebar">
         <Sidebar />
-        <div id="page-wrap">
+        <div id="content">
           <h1><Project /></h1>
           <h1> OR </h1>
           <h1><Brief /></h1>
-          <h1> OR </h1>
-          <h1><NewBrief /></h1>
         </div>
       </div>
     </Container>
+   
   );
 }
 

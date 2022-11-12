@@ -15,7 +15,6 @@
     margin: auto;
     height: 7rem;
     border-bottom: 1px solid black;
-    margin-bottom: 1rem;
     background-color:honeydew;
 }
 
@@ -26,6 +25,7 @@
 #projects-container {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 2rem;
 }
 
 #title {
