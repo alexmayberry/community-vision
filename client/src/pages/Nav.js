@@ -15,9 +15,8 @@ function Nav() {
       <div id="sidebar">
         <Sidebar />
         <div id="content">
-          <h1><Project /></h1>
-          <h1> OR </h1>
-          <h1><Brief /></h1>
+          <div id="project-tag"><Project /></div>
+          <div id="brief-tag"><Brief /></div>
         </div>
       </div>
     </Container>

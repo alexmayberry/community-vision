@@ -4,6 +4,7 @@
 
 #projects-card {
     border-radius: 0%;
+    margin-bottom: 13%;
 }
 
 .card img {
@@ -23,20 +24,50 @@
 }
 
 #projects-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2rem;
+    margin-left: 7%;
+    margin-top: 3%;
 }
 
 #title {
-    width: 75vw;
+    width: 100%;
+    justify-content:center;
+}
+
+.name-tag {
+    padding-right: 50px;
 }
 
 .btn {
     border: 1px solid black;
     text-decoration: none;
+    width: 100%;
+}
+
+.main-btn {
+    width: 36.2%;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+#project-tag {
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+#brief-tag {
+    color: black;
+    text-align: center;
+}
+
+#signup-page {
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+#login-page {
+    margin-top: 3%;
+    margin-left: 15%;
 }

@@ -1168,14 +1168,14 @@ label form [type='radio'] {
 }
 
 .container {
-  width: 100vw;
+  /* width: 100vw; */
   /* max-width: 1200px; */
   margin-left: 0;
   margin-right: 0rem;
 }
 
 .container.container-fluid {
-  width: 100%;
+  width: 92%;
 }
 
 /* FLEX CONTENT */
