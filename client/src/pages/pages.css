@@ -37,6 +37,10 @@
     padding-right: 50px;
 }
 
+#auth-btns {
+    width: 35%;
+}
+
 .btn {
     border: 1px solid black;
     text-decoration: none;
@@ -44,7 +48,7 @@
 }
 
 .main-btn {
-    width: 36.2%;
+    width: 42%;
 }
 
 a:hover {
