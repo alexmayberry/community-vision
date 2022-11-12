@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './sidebar.css';
-import NewBrief from '../../pages/Modal';
+import NewBrief from '../../pages/NewBrief';
 
 
 const Sidebar = () => {

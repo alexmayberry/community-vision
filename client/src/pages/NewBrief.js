@@ -3,50 +3,15 @@ import React, {useState} from 'react';
 import { Cloudinary } from "@cloudinary/url-gen";
 import ImageUpload from "../components/ImageUpload";
 
-// import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
-// import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+
 import "./pages.css";
 
-// import { useMutation } from '@apollo/client';
-// import { ADD_USER } from '../utils/mutations';
+function NewBrief () {
 
-// import Auth from '../utils/auth';
-
-// const Signup = () => {
-//   const [formState, setFormState] = useState({
-//     username: '',
-//     email: '',
-//     password: '',
-//   });
-//   const [addUser, { error, data }] = useMutation(ADD_USER);
-
-//   const handleChange = (event) => {
-//     const { name, value } = event.target;
-
-//     setFormState({
-//       ...formState,
-//       [name]: value,
-//     });
-//   };
-  
-
-//     try {
-//       const { data } = await addUser({
-//         variables: { ...formState },
-//       });
-
-//       Auth.login(data.addUser.token);
-//     } catch (e) {
-//       console.error(e);
-//     }
-//   };
-// }
-
-const NewBrief = () => {
-  
 const [imagesUploadedList, setImagesUploadedList] = useState([]);  
-
 
 const cld = new Cloudinary({
   cloud: {
@@ -58,61 +23,68 @@ const onImageUploadHandler = (publicId) => {
   setImagesUploadedList((prevState) => [...prevState, publicId]);
 };
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    // console.log(formState);
-  }
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
+  // };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">New Brief</h4>
-          <div className="card-body">
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Add a New Brief
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>New Brief</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Brief Title</Form.Label>
+              <Form.Control
+                type="text"
                 placeholder="Brief Title"
-                name="title"
-                type="text"
-                //   value={formState.name}
-                //   onChange={handleChange}
+                autoFocus
               />
-              <input
-                className="form-input"
-                placeholder="Date"
-                name="date"
-                type="text"
-                //   value={formState.email}
-                //   onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="brief content"
-                name="brief_content"
-                type="text"
-                //   value={formState.password}
-                //   onChange={handleChange}
-              />
-              <ImageUpload
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Brief Proposal</Form.Label>
+              <Form.Control 
+              type="text"
+              as="textarea" 
+              rows={12}
+              placeholder="Brief Content" />
+            </Form.Group>
+            <div>
+            <ImageUpload
                 cloud_name={cld.cloudinaryConfig.dkrgydudr}
                 upload_preset={cld.cloudinaryConfig.nmqlk7x4}
                 onImageUpload={(publicId) => onImageUploadHandler(publicId)}
               />
-              <button
-                className="btn btn-block btn-primary"
-                style={{ cursor: "pointer" }}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </main>
+            </div>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancel
+          </Button>
+          <div></div>
+          <Button variant="primary" onClick={handleClose}>
+            Submit Your Brief
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
-};
+}
 
+// render(<NewBrief />);
 export default NewBrief;
