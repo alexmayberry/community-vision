@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 
-import { Cloudinary } from "@cloudinary/url-gen";
-import ImageUpload from "../components/ImageUpload";
+// import { Cloudinary } from "@cloudinary/url-gen";
+// import ImageUpload from "../components/ImageUpload";
+
+import Allimage from '../components/Allimages';
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -11,17 +13,17 @@ import "./pages.css";
 
 function NewBrief () {
 
-const [imagesUploadedList, setImagesUploadedList] = useState([]);  
+// const [imagesUploadedList, setImagesUploadedList] = useState([]);  
 
-const cld = new Cloudinary({
-  cloud: {
-    cloud_name: "cloud_name", //Your cloud name
-    upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this
-  }
-});
-const onImageUploadHandler = (publicId) => {
-  setImagesUploadedList((prevState) => [...prevState, publicId]);
-};
+// const cld = new Cloudinary({
+//   cloud: {
+//     cloud_name: "cloud_name", //Your cloud name
+//     upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this
+//   }
+// });
+// const onImageUploadHandler = (publicId) => {
+//   setImagesUploadedList((prevState) => [...prevState, publicId]);
+// };
 
   // const handleFormSubmit = async (event) => {
   //   event.preventDefault();
@@ -64,11 +66,13 @@ const onImageUploadHandler = (publicId) => {
               placeholder="Brief Content" />
             </Form.Group>
             <div>
-            <ImageUpload
+            {/* <ImageUpload
                 cloud_name={cld.cloudinaryConfig.dkrgydudr}
                 upload_preset={cld.cloudinaryConfig.nmqlk7x4}
                 onImageUpload={(publicId) => onImageUploadHandler(publicId)}
-              />
+              /> */}
+
+              <Allimage/>
             </div>
           </Form>
         </Modal.Body>

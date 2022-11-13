@@ -6,8 +6,7 @@ import { Cloudinary } from "@cloudinary/url-gen";
 const CldPhoto = (props) => {
   const cld = new Cloudinary({
     cloud: {
-      cloudName: "dkrgydudr",
-      uploadPreset: "nmqlk7x4",
+      cloudName: props.cloudName
     }
   });
 
