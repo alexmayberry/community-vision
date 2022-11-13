@@ -8,7 +8,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Nav from './pages/Nav';
+import Main from './pages/Main';
 import Projects from './pages/Projects';
 import Project from './pages/Project';
 import Brief from './pages/Brief';
@@ -17,8 +17,6 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import NewBrief from'./pages/NewBrief';
-
-
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -45,6 +43,8 @@ const client = new ApolloClient({
 });
 
 function App() {
+
+
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -58,17 +58,15 @@ function App() {
                 element={<Projects />}
               />
               <Route 
-                path="/nav"
-                element={<Nav />}
+                path="/main/:projectId"
+                element={<Main />}
               />
-              <Route 
-                path="/project"
-                element={<Project />}
-              />
+              {/* This Brief component will be removed from App.js */}
               <Route 
                 path="/brief"
                 element={<Brief />}
               />
+              {/* This NewBrief component will be removed from App.js */}
               <Route 
                 path="/newbrief"
                 element={<NewBrief />}

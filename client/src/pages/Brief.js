@@ -5,12 +5,13 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import Container from "react-bootstrap/Container";
 import "./pages.css";
+import Project from "./Project";
 
 const Brief = () => {
   return (
     <main>
         <Container>
-          <h1>Brief Goes Here</h1>
+          <h1>-Single Brief Placeholder-</h1>
           </Container>
     </main>
   );
