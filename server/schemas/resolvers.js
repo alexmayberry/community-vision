@@ -27,12 +27,12 @@ const resolvers = {
     },
     briefs: async () => {
       return await Brief.find({})
-      .populate('user')
+      // .populate('user')
       .populate('project');
     },
     brief: async (parent, args, context) => {
       return await Brief.findById( args.briefId )
-      .populate('user')
+      // .populate('user')
       .populate('project');
     },
     projects: async (parent, args, context) => {
@@ -116,7 +116,9 @@ const resolvers = {
       }
 
       const brief = await Brief.create(
-        { ...entry, user: user }, 
+        { ...entry, 
+        //  user: user 
+        }, 
         // { $addToSet: { user: user } }
         );
       console.log(user);

@@ -1,7 +1,7 @@
 [
     {
     "id": "637003b090ebf5fd7f3df9d9",
-    "user_id": "636ff4f24b1addc12334323b",
+    "project": "636ff5764b1addc12334323e",
     "title": "North Beacon Hill P-Patch",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [
@@ -13,7 +13,7 @@
     },
     {
     "id": "637004a28898262927751e25",
-    "user_id": "637005737ec64b2fd31c02bf",
+    "project": "636ff5764b1addc12334323e",
     "title": "Dr. Jose Rizal Park Squash Courts",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [
@@ -25,7 +25,7 @@
     },
     {
     "id": "637004caa61b821305eb3c0d",
-    "user_id": "637005a9b9dc3a780ffb5a5d",
+    "project": "636ff5764b1addc12334323e",
     "title": "More Open Space at Dr. Jose Rizal Park",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [

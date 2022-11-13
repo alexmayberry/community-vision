@@ -49,7 +49,7 @@ const typeDefs = gql`
     brief_content: [String]
     image_url: String
     date_created: String
-    user: SimpleUser
+    # user: SimpleUser
     project: Project
   }
 

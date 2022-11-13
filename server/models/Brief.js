@@ -16,10 +16,10 @@ const briefSchema = new Schema({
         default: Date.now,
     },
     // store the author's user information as embedded
-    user: {
-          type: Schema.Types.ObjectId,
-          ref: 'User',
-    },
+    // user: {
+    //       type: Schema.Types.ObjectId,
+    //       ref: 'User',
+    // },
     project: {
         type: Schema.Types.ObjectId,
         ref: 'Project',
