@@ -1,7 +1,4 @@
 import React from "react";
-// import {Link} from "react-router-dom";
-// import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "./pages.css";
 import Sidebar from "../components/Sidebar";

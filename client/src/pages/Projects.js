@@ -22,18 +22,18 @@ if (loading) {
   return (
     <main>
       <Container id="projects-container">
-        <Row>
+      <Row xs={1} md={2} lg={3} xl={4}>
           {projects.map((project) => (
 
           <Col key={project._id} id="col">
-            <Card id="projects-card" className="text-center" style={{ width: "15.5rem" }}>
+            <Card id="projects-card" className="text-center">
               <Card.Img variant="top" src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/06/People-gather-at-Gas-Works-Park.jpg" />
               <Card.Body>
-                <Card.Title className="bg-primary text-white">{project.title}</Card.Title>
+                <Card.Title className="card-title bg-primary text-white">{project.title}</Card.Title>
                 <Card.Text>
                   {project.project_description}
                 </Card.Text>
-                <Button variant="secondary"><Link to={`/main/${project._id}`}> Project </Link></Button>
+                <Button variant="primary"><Link className="text-white" to={`/main/${project._id}`}> Project </Link></Button>
               </Card.Body>
             </Card>
           </Col>
