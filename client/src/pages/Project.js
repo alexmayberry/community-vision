@@ -11,21 +11,21 @@ import "./pages.css";
 const Project = ({project}) => {
   return (
     <main>
-      <Container>
-        <h1>{project.title}</h1>
-        <h2>Description</h2>
+      <Container className="seed">
+        <h3>{project.title}</h3>
+        <h5>Description</h5>
           <p>{project.project_description}</p>
-          <h2>Intro</h2>
+          <h5>Intro</h5>
           <p>{project.intro}</p>
-          <h2>Project Requirements</h2>
+          <h5>Project Requirements</h5>
           {project.project_reqs.map((req) => (
             <p>{req}</p>
           ))}
-          <h2>Brief Requirements</h2>
+          <h5>Brief Requirements</h5>
           {project.brief_reqs.map((req) => (
             <p>{req}</p>
           ))}
-          <h2>Budget</h2>
+          <h5>Budget</h5>
           <p>{project.budget_description}</p>
       </Container>
     </main>

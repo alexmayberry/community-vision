@@ -6,6 +6,7 @@ body {
 p {
   color: black;
 }
+
 #sidebar {
   font-family: sans-serif;
   height: 100vh;
@@ -40,11 +41,13 @@ p {
 }
 
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 75px;
   height: 20px;
   left: 5%;
   top: 40px;
+  z-index: 1;
 }
 
 .bm-burger-bars {

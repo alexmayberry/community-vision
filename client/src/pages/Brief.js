@@ -5,7 +5,7 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import Container from "react-bootstrap/Container";
 import "./pages.css";
-import Project from "./Project";
+// import Project from "./Project";
 
 const Brief = () => {
   return (
