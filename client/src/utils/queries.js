@@ -15,7 +15,7 @@ export const QUERY_PROJECTS = gql`
     projects {
     _id
     title
-    image_urls
+    image_url
     project_description
     submission_deadline
     user {
@@ -28,7 +28,7 @@ export const QUERY_PROJECTS = gql`
 
 export const QUERY_PROJECT = gql`
   query Project($projectId: ID!) {
-  project(projectID: $projectId) {
+  project(projectId: $projectId) {
     _id
     title
     project_description
@@ -36,7 +36,7 @@ export const QUERY_PROJECT = gql`
     project_reqs
     budget_description
     submission_deadline
-    image_urls
+    image_url
     brief_reqs
     user {
       _id
@@ -47,11 +47,11 @@ export const QUERY_PROJECT = gql`
       title
       brief_content
       date_created
-      image_urls
-      user {
-        username
-        _id
-      }
+      image_url
+      # user {
+      #   username
+      #   _id
+      # }
     }
   }
 }
@@ -67,7 +67,7 @@ export const QUERY_ME = gql`
         _id
         title
         brief_content
-        image_urls
+        image_url
         date_created
         project {
           _id
@@ -78,7 +78,7 @@ export const QUERY_ME = gql`
         _id
         title
         project_description
-        image_urls
+        image_url
       }
     }
   }
