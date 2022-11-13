@@ -53,7 +53,7 @@ export const ADD_PROJECT = gql`
       brief_reqs
       budget_description
       submission_deadline
-      image_urls
+      image_url
       user {
         _id
         username
@@ -71,7 +71,7 @@ export const REMOVE_PROJECT = gql`
       intro
       project_reqs
       brief_reqs
-      image_urls
+      image_url
       submission_deadline
       budget_description
       briefs {
@@ -93,16 +93,16 @@ export const ADD_BRIEF = gql`
       title
       brief_content
       date_created
-      image_urls
+      image_url
       project {
         _id
         title
-        image_urls
+        image_url
       }
-      user {
-        _id
-        username
-      }
+      # user {
+      #   _id
+      #   username
+      # }
     }
   }
 `;
@@ -114,15 +114,15 @@ export const REMOVE_BRIEF = gql`
       title
       brief_content
       date_created
-      image_urls
+      image_url
       project {
         _id
         title
       }
-      user {
-        _id
-        username
-      }
+      # user {
+      #   _id
+      #   username
+      # }
     }
   }
 `;
