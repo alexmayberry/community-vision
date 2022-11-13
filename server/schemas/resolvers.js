@@ -31,7 +31,7 @@ const resolvers = {
       .populate('project');
     },
     brief: async (parent, args, context) => {
-      return await Brief.findById( args.briefId )
+      return await Brief.findById( { _id: args.briefId } )
       // .populate('user')
       .populate('project');
     },
@@ -41,7 +41,7 @@ const resolvers = {
         .populate('briefs');
     },
     project: async (parent, args, context) => {
-      return await Project.findOne( args.ID )
+      return await Project.findOne( { _id: args.projectId } )
         .populate('user')
         .populate('briefs');
     }

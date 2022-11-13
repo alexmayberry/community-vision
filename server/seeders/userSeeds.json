@@ -1,43 +1,5 @@
 [
   {
-    "id": "636ff4f24b1addc12334323b",
-    "username": "briankernighan",
-    "email": "bkernighan@techfriends.dev",
-    "password": "password01",
-    "briefs": [
-      "637003b090ebf5fd7f3df9d9"
-    ],
-    "projects": []
-  },
-  {
-    "id": "637005737ec64b2fd31c02bf",
-    "username": "maxalexander",
-    "email": "mkanatalexander@techfriends.dev",
-    "password": "password02",
-    "briefs": [
-      "637004a28898262927751e25"
-    ],
-    "projects": []
-  },
-  {
-    "id": "637005a9b9dc3a710ffb5a5d",
-    "username": "jenbeck",
-    "email": "wtls@techfriends.dev",
-    "password": "password03",
-    "briefs": [
-      "637004caa61b821305eb3c0d"
-    ],
-    "projects": []
-  },
-  {
-    "id": "637005a9b9dc3a780ffb5a5d",
-    "username": "kipbontaught",
-    "email": "tbontaught@stl.gov",
-    "password": "password05",
-    "briefs": [],
-    "projects": []
-  },
-  {
     "id": "637005a9b9dc3a780ffb5a5d",
     "username": "tifreed",
     "email": "treed@seattle.gov",
@@ -52,5 +14,41 @@
       "636ff611b04f36b11cc47d38",
       "63573373b7503ffea3be2a8f"
     ]
+  },
+  {
+    "id": "636ff4f24b1addc12334323b",
+    "username": "briankernighan",
+    "email": "bkernighan@techfriends.dev",
+    "password": "password01",
+    "briefs": [
+      "637003b090ebf5fd7f3df9d9",
+      "637004caa61b821305eb3c0d",
+      "637004a28898262927751e25"
+    ],
+    "projects": []
+  },
+  {
+    "id": "637005737ec64b2fd31c02bf",
+    "username": "maxalexander",
+    "email": "mkanatalexander@techfriends.dev",
+    "password": "password02",
+    "briefs": [],
+    "projects": []
+  },
+  {
+    "id": "637005a9b9dc3a710ffb5a5d",
+    "username": "jenbeck",
+    "email": "wtls@techfriends.dev",
+    "password": "password03",
+    "briefs": [],
+    "projects": []
+  },
+  {
+    "id": "637005a9b9dc3a780ffb5a5d",
+    "username": "kipbontaught",
+    "email": "tbontaught@stl.gov",
+    "password": "password05",
+    "briefs": [],
+    "projects": []
   }
 ]

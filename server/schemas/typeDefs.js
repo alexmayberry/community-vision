@@ -84,7 +84,7 @@ const typeDefs = gql`
     briefs: [Brief]
     brief(briefId: ID!): Brief
     projects: [Project]
-    project(projectID: ID!): Project
+    project(projectId: ID!): Project
   }
 
   type Mutation {
