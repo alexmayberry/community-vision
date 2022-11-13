@@ -5,6 +5,16 @@
 #projects-card {
     border-radius: 0%;
     margin-bottom: 13%;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.card-title {
+    padding: 20px;
+}
+
+.project-btn {
+    padding: 20px;
 }
 
 .card img {
@@ -82,4 +92,21 @@ a:hover {
 #login-page {
     margin-top: 3%;
     margin-left: 15%;
+}
+
+.sidebar-button {
+    margin-left: 3%;
+    width: 200px;
+    height: 100px;
+    position:fixed;
+}
+
+#content {
+    margin-top: 3%;
+    margin-left: 25%;
+    height: 100vh;
+}
+
+#new-brief-btn {
+    margin-bottom: 5%;
 }

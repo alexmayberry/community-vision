@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <header id="header" className="text-dark flex-row">
-      <div id="title" className="flex-row align-center justify-center">
+      <div id="title" className="flex-row align-center">
         <div>
           <Link className="text-dark" to="/">
             <h1 className="name-tag m-0">COMMUNITY VISION</h1>

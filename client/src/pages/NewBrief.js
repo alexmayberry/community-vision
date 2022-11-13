@@ -34,7 +34,7 @@ const onImageUploadHandler = (publicId) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="danger" onClick={handleShow}>
         Add a New Brief
       </Button>
 
