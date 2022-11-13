@@ -10,16 +10,16 @@ const briefSchema = new Schema({
             require: true
         } 
     ],
-    image_urls: [String],
+    image_url: String,
     date_created: {
         type: Date,
         default: Date.now,
     },
     // store the author's user information as embedded
-    user: {
-          type: Schema.Types.ObjectId,
-          ref: 'User',
-    },
+    // user: {
+    //       type: Schema.Types.ObjectId,
+    //       ref: 'User',
+    // },
     project: {
         type: Schema.Types.ObjectId,
         ref: 'Project',

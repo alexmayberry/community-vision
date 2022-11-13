@@ -1,6 +1,6 @@
 [
     {
-    "id": "63573373b7503ffea3be2a8f",
+    "id": "636ff5764b1addc12334323e",
     "title": "Dr. Jose Rizal Park Renovation",
     "intro": "Nestled between Chinatown/International District and Beacon Hill neighborhoods, Dr. Jose Rizal Park serves a diversity of communities with its panoramic views of downtown Seattle. There are steep hill gradients on the 4-acre site, which have naturally divided it into upper and lower levels. The upper level of the park, bordered by 12th Ave. on the east side and a chain link fence on the west side at the top of slope, is the focus of this design opportunity. The upper level of the park includes a covered picnic structure, restroom building, stepped amphitheater seating, a junior playground, lawn areas and plantings, and is home to a bronze bust of Dr. Jose Rizal, a national hero of the Philippines, sculpted by the late Filipino master sculptor, Anastacio Caedo and East is West, a triptych mosaic mural designed by Filipino artist Val Laigo, commissioned by the Filipino American Community. \n While Seattle Parks & Recreation (SPR) has owned the land since the 1970s, the park was renovated, officially dedicated to and named after Dr. Jose Rizal in the 1980s. The local Filipino community raised funds to develop the park which remains a culturally significant gathering place for Seattle Filipinos. Elevate will harness the potential of this park with due respect for the history and culturally significant elements and functions of the space, as an important component of the community and of the Seattle public realm in general.",
     "budget_description": "Seattle Park District Fund: $50,000, Real Estate Excise Tax II Capital Fund: $350,000, Seattle Parks and Recreation is working to secure additional funding and grants for this project.",
@@ -19,11 +19,135 @@
         "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
         "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
     ],
-    "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"],
+    "image_url": "image",
     "briefs": [
-        "63573373b7503ffea3be2a8f",
-        "63573373b7503ffea3be2a8f",
-        "63573373b7503ffea3be2a8f"
+        "637003b090ebf5fd7f3df9d9",
+        "637004a28898262927751e25",
+        "637004caa61b821305eb3c0d"
     ]
+    },
+    {
+    "id": "636ff5ad37e68fd32202caba",
+    "title": "HODIAMONT TRACKS GREENWAY: Academy-Sherman Park Community Garden Redesign",
+    "intro": "The Hodiamont Tracks were once the route of a streetcar line and in later years a bus route. While the bus route is no longer active, the 3.5 mile corridor has the potential to become a greenway that would link the St. Vincent and the future Brickline Greenways. \n The tracks start on Enright Avenue, one block west of Vandeventer in the Grand Center Arts District and continue west 3.5 miles connecting the Vandeventer, Lewis Place, Fountain Park, Academy/Sherman Park, Visitation Park and West End neighborhoods in the City of St. Louis to Gwen Giles Park at the city limit. In addition to connecting to existing and future greenways, it would link numerous schools, parks, houses of worship and neighborhoods. \n The Academy-Sherman Park Neighborhood is a lot adjacent to a section of the Hodiamont Tracks running through the Academy-Sherman Park Neighborhood. Community groups in the neighborhood use the space for events throughout the year. A vibrant community garden uses about half the lot to grow vegetables and run environmental education programs. With the development of the Tracks, there is an opportunity to revitalize the space and add assets valued by the community.",
+    "budget_description": "In 2000 and again in 2013, voters in St. Louis City, St. Louis County, and St. Charles County voted to use sales tax funds to build, promote, and sustain greenways. The Great Rivers Greenway Foundation secures private donations and grants to leverage the sales tax funds. Great Rivers Greenway is currently funding the planning and design of the greenway on the Hodiamont Tracks. Additional funding sources may be used to fund the construction and maintenance in the future. The project cost is not yet known. The cost will be estimated as the greenway is designed.",
+    "project_description": "The construction of a Greenway recreational trail on the historic Hodiamont Tracks and redesign of the Academy-Sherman Park Community Garden.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "A gathering space to hold community events.",
+        "Utilize the existing lot footprint.",
+        "Maintain or expand the existing garden footprint.",
+        "A shelter for distributing food from the garden.",
+        "A community message board."
+    ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves the community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
+    },
+    {
+    "id": "636ff5bf3a9c54a26aed6559",
+    "title": "First Hill Park Redesign",
+    "intro": "First Hill Park originally opened in 1987. The 0.25-acre urban park is located along University St. and Minor St. immediately north of the Stimson-Green Mansion in a densely populated residential neighborhood. It features a custom bronze sculpture of an Edwardian chair, ottoman, and two bear cubs. The park seeks to create an open and flexible space allowing for performance and passive activities to occur, while retaining an intimate garden feel, an important characteristic of the First Hill Neighborhood. Seating areas are interspersed among lushly planted beds, and a curvilinear seat step meanders through the park and frames the lawn suited for small events and gatherings. \n The design process is to be based in an understanding of the community's desires and needs, with the ultimate goal of implementing a design with the most positive impact for the greatest number of people. \n FHIA, and our partners at SiteWorkshop, will work with the Parks and Recreation Department and the surrounding community to perform a community engagement and outreach plan which ultimately produces enhancements to the amenities and design of First Hill park. The schematic proposal will be reviewed and adopted by the community and the Parks Department throughout the process, and constructed in the mid-term. \n Our vision is to make First Hill Park a vibrant, welcoming, and safe open space in our neighborhood where people of all ages and abilities can relax and play and which increases public safety, contributes to neighborhood wellness and connectivity, and builds community.",
+    "budget_description": "$25,000 Neighborhood Matching Fund Small and Simple grant for planning. $1 million for design and construction.",
+    "project_description": "This project aims to envision, research, enhance, and design a new future for First Hill Park.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "Create a vibrant, welcoming, and safe open space.",
+        "Increases public safety.",
+        "Include a commissioned public artwork.",
+        "Provide accommodations for gatherings i.e. picnic tables."
+    ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves the community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
+    },
+    {
+    "id": "636ff5d2e49732b649c81c62",
+    "title": "McGraw Square Redesign",
+    "intro": "SDOT is partnering with the Downtown Seattle Association and the development team for the 500 – 600 Olive Planned Community Development to gather public input on design priorities and desires for McGraw Square. The goal of this project is to optimize the design and use of McGraw Square so it can continue to serve as a vital and active public space in the heart of Downtown Seattle. \n Developer Kilroy Realty Corporation proposes three new buildings and rehabilitation of one historic structure on two blocks bounded by Stewart St, Olive Way, and 5th and 7th Aves to be considered together as a “Planned Community Development” (PCD) by the Seattle Department of Construction and Inspections. \n Seattle Department of Constructions and Inspections has identified improvements to publicly-owned McGraw Square and new ground level connections between McGraw Square and the PCD building at 500 Olive as required public benefit for the PCD project. The new tower will introduce active uses along McGraw Square. \n SDOT is leading a process to develop concepts for improving the use and design for the Square emphasizing activation for people staying in and walking through the space in partnership with the development team. The project aims to make McGraw Square a more inviting place to linger, attend small-scale public events, and connect to the SLU streetcar by providing enhanced seating, lighting, art elements, wayfinding, and opportunities for street vending.",
+    "budget_description": "TBD",
+    "project_description": "Revitalize McGraw Square to create an inviting place at the heart of downtown Seattle.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "Activate the space for spending time and walking through.",
+        "Provide a place for riders to wait for the SLU streetcar.",
+        "Provide opportunities for street vending",
+        "Accommodate small public meetings."
+    ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves the community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
+    },
+    {
+    "id": "636ff5ec66d80cce3954b9dc",
+    "title": "Rainier Improvements",
+    "intro": "Rainier Ave S has great restaurants, retail, salons, community centers, libraries, and schools and some of the highest bus ridership in Seattle. Unfortunately it also leads the city in crashes. Between 2005 and 2014, there were nearly 3,600 total collisions along Rainier Ave S. During a 6-month study in 2015, on average, there was 1 crash per day that took 45 minutes to clear. We're working to change that. \n In 2014, we launched a collaborative process to improve Rainier Ave S as part of Seattle's Vision Zero program to reach zero traffic fatalities or serious injuries by 2030. During Phase 1, we redesigned the street between S Alaska St and S Kenny St and successfully improved safety. We're now in Phase 2 between S Kenny St and S Henderson St.",
+    "budget_description": "We received funding from the Real Estate Tax to fund the second phase of the Rainier Ave S Corridor Improvements Project. The project is also funded by the Levy to Move Seattle, a 9-year $930 million levy approved by voters in 2015.",
+    "project_description": "Improving safety and bus reliability on Rainier.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "Promote pedestrian safety.",
+        "Promote a vital streetlife.",
+        "Prioritize transit traffic."
+        ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
+    },
+    {
+    "id": "636ff611b04f36b11cc47d38",
+    "title": "Accessible Mt Baker",
+    "intro": "In late 2019, we received hundreds of responses to our survey and held various public workshops in multiple languages to collect input on near-term improvements at the Rainier Ave S and Martin Luther King Jr Way intersection. See this fact sheet and these visuals for more details on the improvements. We generally heard from neighbors that all the improvements are important. \n In 2020, we needed to reassess funding and determine what is feasible to implement. We are moving forward with design focusing on 6 out of the 8 near-term improvements. Because the 6 projects overlap with the MLK Protected Bike Lane project, that team is going to take the lead on design and then procuring funding for construction by 2023.",
+    "budget_description": "Early design and near-term improvements are funded by the Levy to Move Seattle, a 9-year $930 million levy approved by voters in 2015. Final design and construction of the greater Accessible Mt Baker plan are not yet funded. ",
+    "project_description": "The Mt Baker Station Area has been the focus of several planning processes in the past 10 years in which the community has articulated a vision for a thriving, diverse, sustainable, and affordable town center.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "Enhance Mt. Baker pedestrian bridge with public art.",
+        "Promote a vital streetlife.",
+        "Prioritize bicycle traffic safety."
+        ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
+    },
+    {
+    "id": "63573373b7503ffea3be2a8f",
+    "title": "South Park Community Center Site Redevelopment",
+    "intro": "This project will include a spraypark, play area, picnic area, lawn, extended parking, dog off leash area, a full-size multi-sport court, and an all-season synthetic lit turf field with a circular walking trail, in partnership with Seattle Academy (SAAS). This project will be concurrent with the South Park Community Center Stabilization Project that will address a number of major maintenance, accessibility, and program needs at South Park Community Center. \n Seattle Parks and Recreation entered into a partnership with Seattle Academy to provide funding for the field renovation including, fencing, lighting, and other mutually agreeable elements of the turf field and they will have use of the field on Monday through Friday during the fall and spring sports seasons in the afternoon. This is roughly 7.5% of total time the field will be available to the community. To learn more about the project see the fact sheet.",
+    "budget_description": "$10 million - Seattle Park District; Seattle Parks Foundation; additional grant funding",
+    "project_description": "In 2017, Seattle Parks and Recreation (SPR) began collaborating with the South Park community on redevelopment, of the site, to promote a healthier and more vibrant space for all community members.",
+    "submission_deadline": "2022-10-29T21:05:00.716Z",
+    "project_reqs": [
+        "A full-size multi-sport synthetic turf field with a circular walking trail and an outdoor fitness zone.",
+        "New play facilities - including playgrounds, a sport court, and spray park - for a range of ages and abilities.",
+        "n off-leash dog area and expanded parking lot."
+        ],
+    "brief_reqs": [
+        "Introduction: Your background and interest in this project, in a written narrative of maximum two hundred (200) words.",
+        "Project Summary: Description of project purpose and design vision, in a written narrative of maximum five hundred (500) words.",
+        "Design Statement: Describe how your approach will develop a place that respects the history of the neighborhood and serves their community. Examples or possible mediums are: drawing(s), sketch(es), video(s), photo(s), artwork, etc. (Not all the mediums listed are required, nor are the mediums limited to these). We encourage creativity in your responses."
+    ],
+    "image_url": "image",
+    "briefs": []
     }
 ]

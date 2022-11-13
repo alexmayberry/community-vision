@@ -1,7 +1,7 @@
 [
     {
-    "id": "63573373b7503ffea3be2a8f",
-    "user_id": "63573373b7503ffea3be2a8f",
+    "id": "637003b090ebf5fd7f3df9d9",
+    "project": "636ff5764b1addc12334323e",
     "title": "North Beacon Hill P-Patch",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [
@@ -9,11 +9,11 @@
         "This is my project summary.",
         "This is my design Statement."
         ],
-    "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"]
+    "image_url": "image"
     },
     {
-    "id": "63573373b7503ffea3be2a8f",
-    "user_id": "63573373b7503ffea3be2a8f",
+    "id": "637004a28898262927751e25",
+    "project": "636ff5764b1addc12334323e",
     "title": "Dr. Jose Rizal Park Squash Courts",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [
@@ -21,11 +21,11 @@
         "This is my project summary.",
         "This is my design Statement."
         ],
-    "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"]
+    "image_url": "image"
     },
     {
-    "id": "63573373b7503ffea3be2a8f",
-    "user_id": "63573373b7503ffea3be2a8f",
+    "id": "637004caa61b821305eb3c0d",
+    "project": "636ff5764b1addc12334323e",
     "title": "More Open Space at Dr. Jose Rizal Park",
     "date_created": "2022-10-29T21:05:00.716Z",
     "brief_content": [
@@ -33,6 +33,6 @@
         "This is my project summary.",
         "This is my design Statement."
         ],
-    "image_urls": ["https://i.ibb.co/d5p7yG7/mikosticker.png", "https://i.ibb.co/d5p7yG7/mikosticker.png"]
+    "image_url": "image"
     }
 ]
