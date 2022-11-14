@@ -94,11 +94,11 @@ export const ADD_BRIEF = gql`
       brief_content
       date_created
       image_url
-      project {
-        _id
-        title
-        image_url
-      }
+      # project {
+      #   _id
+      #   title
+      #   image_url
+      # }
       # user {
       #   _id
       #   username
@@ -115,10 +115,10 @@ export const REMOVE_BRIEF = gql`
       brief_content
       date_created
       image_url
-      project {
-        _id
-        title
-      }
+      # project {
+      #   _id
+      #   title
+      # }
       # user {
       #   _id
       #   username

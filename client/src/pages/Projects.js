@@ -27,7 +27,7 @@ if (loading) {
 
           <Col key={project._id} id="col">
             <Card id="projects-card" className="text-center">
-              <Card.Img variant="top" src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/06/People-gather-at-Gas-Works-Park.jpg" />
+              <Card.Img variant="top" src={`${project.image_url}`} />
               <Card.Body>
                 <Card.Title className="card-title bg-primary text-white">{project.title}</Card.Title>
                 <Card.Text>

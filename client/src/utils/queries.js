@@ -69,10 +69,10 @@ export const QUERY_ME = gql`
         brief_content
         image_url
         date_created
-        project {
-          _id
-          title
-        }
+        # project {
+        #   _id
+        #   title
+        # }
       }
       projects {
         _id
