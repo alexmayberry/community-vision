@@ -8,7 +8,6 @@ import '../../pages/pages.css';
 
 function Sidebar({project}) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -40,10 +39,10 @@ function Sidebar({project}) {
                   This text will be a 100 character snippet of the brief content
                   text.
                 </Card.Text>
-                <Button variant="primary">
-                  <Link className="text-white" to="../pages/Brief">
+                <Button variant="primary">Brief
+                  {/* <Link className="text-white" to="../pages/Brief">
                     Brief
-                  </Link>
+                  </Link> */}
                 </Button>
               </Card.Body>
             </Card>

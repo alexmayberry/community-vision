@@ -28,12 +28,13 @@ function Main() {
         <Sidebar project={project}/>
       <div>
           <div id="project-tag"><Project project={project}/></div>
-          <div id="brief-tag"><Brief /></div>
+         <div id="brief-tag"><Brief /></div>
         </div>
       </div>
     </Container>
    
   );
 }
+
 
 export default Main;

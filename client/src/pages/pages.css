@@ -63,8 +63,6 @@
     align-items: center;
     width: 42%;
     height: 60px;
-
-
 }
 
 a:hover {
@@ -84,16 +82,16 @@ a:hover {
     margin: auto;
 }
 
+#brief-tag {
+    color: black;
+    margin: auto;
+}
+
 .seed {
     margin-top: 5%;
     margin-left: 120%;
     justify-content: end;
     width: 60vw;
-}
-
-#brief-tag {
-    color: black;
-    margin: auto;
 }
 
 #signup-page {
