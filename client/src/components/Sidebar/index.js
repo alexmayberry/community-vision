@@ -7,6 +7,7 @@ import NewBrief from "../../pages/NewBrief";
 import '../../pages/pages.css';
 
 function Sidebar({project}) {
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -22,10 +23,10 @@ function Sidebar({project}) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div id="new-brief-btn">
-            <NewBrief project={project} />
+            <NewBrief />
           </div>
           {project.briefs.map((brief) => (
-            <Card style={{ width: "100%" }}>
+            <Card key={brief._id} style={{ width: "100%" }}>
               <Card.Img
                 id="nav-image"
                 variant="top"

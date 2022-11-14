@@ -16,12 +16,12 @@ const Project = ({project}) => {
           <h5>Intro</h5>
           <p>{project.intro}</p>
           <h5>Project Requirements</h5>
-          {project.project_reqs.map((req) => (
-            <p>{req}</p>
+          {project.project_reqs.map((req, index) => (
+            <p key={index}>{req}</p>
           ))}
           <h5>Brief Requirements</h5>
-          {project.brief_reqs.map((req) => (
-            <p>{req}</p>
+          {project.brief_reqs.map((req, index) => (
+            <p key={index}>{req}</p>
           ))}
           <h5>Budget</h5>
           <p>{project.budget_description}</p>

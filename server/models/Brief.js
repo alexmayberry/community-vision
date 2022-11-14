@@ -20,10 +20,10 @@ const briefSchema = new Schema({
     //       type: Schema.Types.ObjectId,
     //       ref: 'User',
     // },
-    project: {
-        type: Schema.Types.ObjectId,
-        ref: 'Project',
-    },
+    // project: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Project',
+    // },
 });
 
 const Brief = model('Brief', briefSchema);
