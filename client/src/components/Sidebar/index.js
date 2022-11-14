@@ -43,7 +43,7 @@ function Sidebar({
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div id="new-brief-btn">
-            <NewBrief />
+            <NewBrief project={project} />
           </div>
           {project.briefs.map((brief) => (
             <Card key={brief._id} style={{ width: "100%" }}>

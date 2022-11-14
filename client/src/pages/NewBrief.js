@@ -14,13 +14,13 @@ import { useMutation } from '@apollo/client';
 import "./pages.css";
 import { useParams } from 'react-router-dom';
 
-function NewBrief () {
+function NewBrief ({project}) {
   const  params  = useParams();
 const [formState, setFormState] = useState({
   title: '',
   brief_content: [''],
   image_url: '',
-  // project: params.projectId
+   project: project._id
 });
 const [addBrief, { error, data }] = useMutation(ADD_BRIEF);
 
@@ -39,7 +39,7 @@ const handleFormSubmit = async (event) => {
 
   try {
     const { data } = await addBrief({
-      variables: { ...formState },
+      variables: { entry: { ...formState } },
     });
     handleClose();
 
