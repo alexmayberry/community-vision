@@ -70,8 +70,7 @@ const onImageUploadHandler = (publicId) => {
     <>
       {data ? (
               <p>
-                Success! You may now head{' '}
-                <Link to={`/main${params.projectId}`}>to your new brief!.</Link>
+                Success! Brief Submitted!
               </p>
             ) : (
               <>
@@ -132,12 +131,12 @@ const onImageUploadHandler = (publicId) => {
                 </Modal>
                 </>
                 )}
-
+{/* 
               {error && (
                 <div className="my-3 p-3 bg-danger text-white">
                   {error.message}
                 </div>
-              )}
+              )} */}
     </>
   )
 }
