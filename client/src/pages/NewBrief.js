@@ -61,6 +61,7 @@ const cld = new Cloudinary({
 const onImageUploadHandler = (publicId) => {
   setImagesUploadedList((prevState) => [...prevState, publicId]);
   setFormState(formState.image_url = url);
+  console.log(formState.image_url);
 
 };
 
