@@ -39,7 +39,6 @@ const Brief = ({
         <Button variant="primary" onClick={refreshPage}>
           <Link className="text-white" to={`/main/${project._id}`}> View Project </Link>
           </Button>
-          {/* <button onClick={handleProjectButtonClick}>View Project</button> */}
           <h3>{brief.title}</h3>
           <p>{brief.brief_content}</p>
           </Container>

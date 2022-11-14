@@ -14,13 +14,13 @@ import { useMutation } from '@apollo/client';
 import "./pages.css";
 import { useParams } from 'react-router-dom';
 
-function NewBrief () {
+function NewBrief ({project}) {
   const  params  = useParams();
 const [formState, setFormState] = useState({
   title: '',
   brief_content: [''],
   image_url: '',
-  // project: params.projectId
+   project: project._id
 });
 const [addBrief, { error, data }] = useMutation(ADD_BRIEF);
 
@@ -39,7 +39,7 @@ const handleFormSubmit = async (event) => {
 
   try {
     const { data } = await addBrief({
-      variables: { ...formState },
+      variables: { entry: { ...formState } },
     });
     handleClose();
 
@@ -70,8 +70,7 @@ const onImageUploadHandler = (publicId) => {
     <>
       {data ? (
               <p>
-                Success! You may now head{' '}
-                <Link to={`/main${params.projectId}`}>to your new brief!.</Link>
+                Success! Brief Submitted!
               </p>
             ) : (
               <>
@@ -132,12 +131,12 @@ const onImageUploadHandler = (publicId) => {
                 </Modal>
                 </>
                 )}
-
+{/* 
               {error && (
                 <div className="my-3 p-3 bg-danger text-white">
                   {error.message}
                 </div>
-              )}
+              )} */}
     </>
   )
 }
