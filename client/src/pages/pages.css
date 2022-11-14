@@ -32,10 +32,6 @@
     z-index: 1;
 }
 
-#project-container {
-    width: 100vw;
-}
-
 #projects-container {
     margin-left: 7%;
     margin-top: 3%;
@@ -43,7 +39,7 @@
 
 #title {
     width: 100%;
-    justify-content:center;
+    justify-content: end;
 }
 
 .name-tag {
@@ -58,30 +54,46 @@
     border: 1px solid black;
     text-decoration: none;
     width: 100%;
+    text-align: center;
 }
 
 .main-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 42%;
+    height: 60px;
+
+
 }
 
 a:hover {
     text-decoration: none;
 }
 
+.container {
+    width: 100vw;
+}
+
+#project-container {
+    width: 100vw;
+}
+
 #project-tag {
     color: black;
-    text-align: center;
     margin: auto;
-    width: 90vw;
 }
 
 .seed {
-    width: 80%;
+    margin-top: 5%;
+    margin-left: 120%;
+    justify-content: end;
+    width: 60vw;
 }
 
 #brief-tag {
     color: black;
-    text-align: center;
+    margin: auto;
 }
 
 #signup-page {
@@ -95,16 +107,14 @@ a:hover {
 }
 
 .sidebar-button {
-    margin-left: 3%;
+    margin-left: 6%;
     width: 200px;
     height: 100px;
     position:fixed;
 }
 
-#content {
-    margin-top: 3%;
-    margin-left: 25%;
-    height: 100vh;
+#sidebar {
+    width: 30%;
 }
 
 #new-brief-btn {

@@ -14,12 +14,12 @@ function Sidebar({project}) {
 
   return (
     <>
-      <Button className="sidebar-button" variant="primary" onClick={handleShow}>
-        Brief List
+      <Button className="sidebar-button" variant="danger" onClick={handleShow}>
+        Active Briefs
       </Button>
-      <Offcanvas show={show} onHide={handleClose} backdrop="static">
+      <Offcanvas show={show} onHide={handleClose} backdrop ="true" scroll="true">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Briefs</Offcanvas.Title>
+          <Offcanvas.Title>Active Briefs</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div id="new-brief-btn">
