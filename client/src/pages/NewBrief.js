@@ -13,6 +13,7 @@ import { useMutation } from '@apollo/client';
 
 import "./pages.css";
 import { useParams } from 'react-router-dom';
+import { url } from '../utils/CloudinaryService';
 
 function NewBrief ({project}) {
   const  params  = useParams();
@@ -59,6 +60,8 @@ const cld = new Cloudinary({
 });
 const onImageUploadHandler = (publicId) => {
   setImagesUploadedList((prevState) => [...prevState, publicId]);
+  setFormState(formState.image_url = url);
+
 };
 
   const [show, setShow] = useState(false);
@@ -113,7 +116,7 @@ const onImageUploadHandler = (publicId) => {
                       <ImageUpload
                           cloud_name={cld.cloudinaryConfig.dkrgydudr}
                           upload_preset={cld.cloudinaryConfig.nmqlk7x4}
-                          onImageUpload={(publicId) => onImageUploadHandler(publicId)}
+                          onImageUpload={(publicId, url) => onImageUploadHandler(publicId, url)}
                           // store result.info.url in formState.image_url
                         />
                       </div>
