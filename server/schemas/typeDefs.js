@@ -50,7 +50,7 @@ const typeDefs = gql`
     image_url: String
     date_created: String
     # user: SimpleUser
-    # project: Project
+    project: Project
   }
 
 
@@ -58,7 +58,7 @@ const typeDefs = gql`
     title: String
     brief_content: [String]
     image_url: String
-    # project: ID
+    project: ID
   }
 
   input inputProject {

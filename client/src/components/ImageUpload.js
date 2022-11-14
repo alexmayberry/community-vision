@@ -22,7 +22,7 @@ const ImageUpload = (props) => {
   };
 
   return (
-    <button className="greenButton" onClick={uploadImageWidget}>
+    <button type="button" onClick={uploadImageWidget}>
       Upload Image
     </button>
   );
