@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import "./pages.css";
 import Sidebar from "../components/Sidebar";
-import "../components/Sidebar/sidebar.css";
 import Project from './Project';
 import Brief from './Brief';
 import { useParams } from 'react-router-dom';

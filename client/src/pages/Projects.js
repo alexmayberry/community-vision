@@ -1,5 +1,4 @@
 import React from "react";
-// import { useQuery } from '@apollo/client';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -25,15 +24,18 @@ if (loading) {
       <Row xs={1} md={2} lg={3} xl={4}>
           {projects.map((project) => (
 
-          <Col key={project._id} id="col">
-            <Card id="projects-card" className="text-center">
-              <Card.Img variant="top" src={`${project.image_url}`} />
+          <Col key={project._id} id="col" className="d-flex flex-column mt-auto">
+            <Card id="projects-card" className="text-center mt-auto">
+              <Card.Img id="projects-img" variant="top" src={`${project.image_url}`} />
               <Card.Body>
                 <Card.Title className="card-title bg-primary text-white">{project.title}</Card.Title>
-                <Card.Text>
+                <Card.Text id="project-text">
                   {project.project_description}
                 </Card.Text>
-                <Button variant="primary"><Link className="text-white" to={`/main/${project._id}`}> Project </Link></Button>
+                <div>
+                <Button id="project-btn" variant="primary"><Link className="text-white" to={`/main/${project._id}`}> Project </Link></Button>
+                </div>
+               
               </Card.Body>
             </Card>
           </Col>
