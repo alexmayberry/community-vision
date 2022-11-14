@@ -8,18 +8,17 @@ import '../../pages/pages.css';
 
 function Sidebar({project}) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button className="sidebar-button" variant="primary" onClick={handleShow}>
-        Brief List
+      <Button className="sidebar-button" variant="danger" onClick={handleShow}>
+        Active Briefs
       </Button>
-      <Offcanvas show={show} onHide={handleClose} backdrop="static">
+      <Offcanvas show={show} onHide={handleClose} backdrop ="true" scroll="true">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Briefs</Offcanvas.Title>
+          <Offcanvas.Title>Active Briefs</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div id="new-brief-btn">
@@ -40,10 +39,10 @@ function Sidebar({project}) {
                   This text will be a 100 character snippet of the brief content
                   text.
                 </Card.Text>
-                <Button variant="primary">
-                  <Link className="text-white" to="../pages/Brief">
+                <Button variant="primary">Brief
+                  {/* <Link className="text-white" to="../pages/Brief">
                     Brief
-                  </Link>
+                  </Link> */}
                 </Button>
               </Card.Body>
             </Card>

@@ -23,17 +23,18 @@ function Main() {
     return <div>Loading...</div>;
   }
   return (
-    <Container id="project-container">
+    <Container id="project-container flex-row">
       <div id="sidebar">
         <Sidebar project={project}/>
-        <div id="content">
+      <div>
           <div id="project-tag"><Project project={project}/></div>
-          <div id="brief-tag"><Brief /></div>
+         <div id="brief-tag"><Brief /></div>
         </div>
       </div>
     </Container>
    
   );
 }
+
 
 export default Main;

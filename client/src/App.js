@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Main from './pages/Main';
 import Projects from './pages/Projects';
-import Project from './pages/Project';
+// import Project from './pages/Project';
 import Brief from './pages/Brief';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
