@@ -49,7 +49,7 @@ const handleFormSubmit = async (event) => {
   }
 };
 
-const [imagesUploadedList, setImagesUploadedList] = useState([]);  
+const [image, setImagesUploadedList] = useState([]);  
 
 const cld = new Cloudinary({
   cloud: {
