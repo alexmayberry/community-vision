@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import NewBrief from "../../pages/NewBrief";
 import '../../pages/pages.css';
@@ -48,9 +47,10 @@ function Sidebar({
           {project.briefs.map((brief) => (
             <Card key={brief._id} style={{ width: "100%" }}>
               <Card.Img
-                id="nav-image"
+                // id="brief-img"
+                style={{ height: "250px" }}
                 variant="top"
-                src="https://bergerpartnership.com/wp-content/uploads/2016/05/Project-page-feature-image-Cal-Anderson.jpg"
+                src={brief.image_url}
               />
               <Card.Body>
                 <Card.Title className="bg-primary text-white">

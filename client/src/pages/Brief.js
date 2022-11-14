@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import Button from "react-bootstrap/Button";
-
 import Container from "react-bootstrap/Container";
 import "./pages.css";
 
@@ -34,16 +33,13 @@ const Brief = ({
   // showProject(briefId2);
 
   return (
-    <main>
         <Container className="seed">
-        <Button variant="primary" onClick={refreshPage}>
-          <Link className="text-white" to={`/main/${project._id}`}> View Project </Link>
-          </Button>
-          {/* <button onClick={handleProjectButtonClick}>View Project</button> */}
           <h3>{brief.title}</h3>
           <p>{brief.brief_content}</p>
+          <Button id="back-to-btn" variant="primary" onClick={refreshPage}>
+          <Link className="text-white" to={`/main/${project._id}`}> Back to Project </Link>
+          </Button>
           </Container>
-    </main>
   );
 };
 
