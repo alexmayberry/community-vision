@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-import { Cloudinary } from "@cloudinary/url-gen";
-import ImageUpload from "../components/ImageUpload";
+// import { Cloudinary } from "@cloudinary/url-gen";
+// import ImageUpload from "../components/ImageUpload";
+
+import Allimage from '../components/Allimages';
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -49,17 +51,17 @@ const handleFormSubmit = async (event) => {
   }
 };
 
-const [image, setImagesUploadedList] = useState([]);  
+// const [image, setImagesUploadedList] = useState([]);  
 
-const cld = new Cloudinary({
-  cloud: {
-    cloud_name: "cloud_name", //Your cloud name // I'm going to paste the cloud_name here to see if that helps
-    upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this // I'm going to paste the preset here to see if that helps
-  }
-});
-const onImageUploadHandler = (publicId) => {
-  setImagesUploadedList((prevState) => [...prevState, publicId]);
-};
+// const cld = new Cloudinary({
+//   cloud: {
+//     cloud_name: "cloud_name", //Your cloud name // I'm going to paste the cloud_name here to see if that helps
+//     upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this // I'm going to paste the preset here to see if that helps
+//   }
+// });
+// const onImageUploadHandler = (publicId) => {
+//   setImagesUploadedList((prevState) => [...prevState, publicId]);
+// };
 
   const [show, setShow] = useState(false);
 
@@ -110,12 +112,13 @@ const onImageUploadHandler = (publicId) => {
                         placeholder="Brief Content" />
                       </Form.Group>
                       <div>
-                      <ImageUpload
+                      {/* <ImageUpload
                           cloud_name={cld.cloudinaryConfig.dkrgydudr}
                           upload_preset={cld.cloudinaryConfig.nmqlk7x4}
                           onImageUpload={(publicId) => onImageUploadHandler(publicId)}
                           // store result.info.url in formState.image_url
-                        />
+                        /> */}
+                      <Allimage/>
                       </div>
                     </Form>
                   </Modal.Body>
