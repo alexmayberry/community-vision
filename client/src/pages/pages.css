@@ -111,12 +111,10 @@ a:hover {
 
 #signup-page {
     margin-top: 3%;
-    margin-left: 15%;
 }
 
 #login-page {
     margin-top: 3%;
-    margin-left: 15%;
 }
 
 .sidebar-button {
@@ -134,13 +132,214 @@ a:hover {
     margin-bottom: 5%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1142px) {
+
+    body {
+        width: 100vw;
+    }
+
+    main {
+        display:flex;
+        width: 100vw;
+        margin-top: 3%;
+    }
+
+    #header {
+        display: flex;
+        flex-direction:row;
+        height: 12rem;
+        margin: auto;
+        border-bottom: 1px solid black;
+        position:sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #name-tag {
+        margin: auto;
+    }
+
+    #auth-btns {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #projects-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+    }
+
+    .sidebar-button {
+       margin-left: 20%;
+       margin-top: 3%;
+       height: 40px;
+       width: 300px;
+    }
+    .seed {
+        display: flex;
+        flex-direction:column;
+        margin-top: 16%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 }
-@media screen and (max-width: 768px) {
-   
 
-   }
+@media screen and (max-width: 992px) {
+    body {
+        width: 100vw;
+    }
 
+    main {
+        display:flex;
+        width: 100vw;
+        margin-top: 3%;
+    }
+
+    #header {
+        display: flex;
+        flex-direction:row;
+        height: 13rem;
+        margin: auto;
+        border-bottom: 1px solid black;
+        position:sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #auth-btns {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #projects-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar-button {
+       margin-left: 30%;
+       margin-top: 15%;
+       height: 40px;
+       width: 300px;
+       position:relative;
+    }
+    .seed {
+        display: flex;
+        flex-direction:column;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    #brief-tag {
+        display: flex;
+        flex-direction:column;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350%;
+    }
+
+    #back-to-btn {
+        width: 300px;
+        margin: auto;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        width: 100vw;
+    }
+
+    main {
+        display:flex;
+        width: 100vw;
+        margin-top: 3%;
+    }
+
+    #header {
+        display: flex;
+        flex-direction:row;
+        height: 13rem;
+        margin: auto;
+        border-bottom: 1px solid black;
+        position:sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #auth-btns {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #projects-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar-button {
+       margin-left: 30%;
+       margin-top: 15%;
+       height: 40px;
+       width: 300px;
+       position:relative;
+    }
+    .seed {
+        display: flex;
+        flex-direction:column;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    #brief-tag {
+        display: flex;
+        flex-direction:column;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350%;
+    }
+
+    #back-to-btn {
+        width: 300px;
+        margin: auto;
+        margin-top: 3%;
+    }
+}
  
 
 
