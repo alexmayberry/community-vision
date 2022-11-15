@@ -4,7 +4,7 @@
 A place where granting organizations can give engaged community members authorship over the design briefs for new public spaces in their communities.  
   
 ## Deployed Application
-[Deployed Application](https://community-vision.herokuapp.com//)
+[Deployed Application](https://community-vision.herokuapp.com/)
 
 ## GitHub Repository
 [CommunityVision GitHub Repository](https://github.com/alexmayberry/community-vision)
