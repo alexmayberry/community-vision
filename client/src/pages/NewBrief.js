@@ -8,19 +8,19 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { ADD_BRIEF } from "../utils/mutations";
-import { useMutation } from '@apollo/client';
+import { isReference, useMutation } from '@apollo/client';
 
 
 import "./pages.css";
 import { useParams } from 'react-router-dom';
+import { url } from '../utils/CloudinaryService';
 
 function NewBrief ({project}) {
-  const  params  = useParams();
 const [formState, setFormState] = useState({
   title: '',
   brief_content: [''],
   image_url: '',
-   project: project._id
+  project: project._id
 });
 const [addBrief, { error, data }] = useMutation(ADD_BRIEF);
 
@@ -35,7 +35,7 @@ const handleChange = (event) => {
 
 const handleFormSubmit = async (event) => {
   event.preventDefault();
-  console.log(formState);
+  console.log("formState on submit:", formState);
 
   try {
     const { data } = await addBrief({
@@ -50,6 +50,7 @@ const handleFormSubmit = async (event) => {
 };
 
 const [image, setImagesUploadedList] = useState([]);  
+const [imageUrl, setImageUrl] = useState('');  
 
 const cld = new Cloudinary({
   cloud: {
@@ -57,8 +58,15 @@ const cld = new Cloudinary({
     upload_preset: "unsigned_upload_preset" //Create an unsigned upload preset and update this // I'm going to paste the preset here to see if that helps
   }
 });
-const onImageUploadHandler = (publicId) => {
+const onImageUploadHandler = (publicId, url) => {
   setImagesUploadedList((prevState) => [...prevState, publicId]);
+  setFormState({
+    ...formState,
+    image_url: url,
+  });
+   console.log(formState);
+  // console.log("formState.image_url",formState.image_url);
+
 };
 
   const [show, setShow] = useState(false);
@@ -113,7 +121,7 @@ const onImageUploadHandler = (publicId) => {
                       <ImageUpload
                           cloud_name={cld.cloudinaryConfig.dkrgydudr}
                           upload_preset={cld.cloudinaryConfig.nmqlk7x4}
-                          onImageUpload={(publicId) => onImageUploadHandler(publicId)}
+                          onImageUpload={(publicId, url) => onImageUploadHandler(publicId, url)}
                           // store result.info.url in formState.image_url
                         />
                       </div>
