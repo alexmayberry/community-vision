@@ -6,8 +6,8 @@ const ImageUpload = (props) => {
     console.log(props);
     let myUploadWidget = openUploadWidget(
       {
-        cloudName: props.cloud_name,
-        uploadPreset: props.upload_preset,
+        cloudName: "dkrgydudr",
+        uploadPreset: "nmqlk7x4",
         tags: ["myname"],
         maxImageWidth: 1000,
         sources: ["local", "url", "camera"]
