@@ -6,12 +6,13 @@ import { Cloudinary } from "@cloudinary/url-gen";
 const CldPhoto = (props) => {
   const cld = new Cloudinary({
     cloud: {
-      cloudName: props.cloudName
+      cloudName: "dkrgydudr",
+      uploadPreset: "nmqlk7x4",
     }
   });
 
   const myImage = cld.image(props.publicId);
-  myImage.resize(fill().width(300).height(300)).delivery(quality(300));
+  myImage.resize(fill().width(1000).height(1000)).delivery(quality(100));
 
   return <AdvancedImage cldImg={myImage} plugins={[lazyload()]} />;
 };
