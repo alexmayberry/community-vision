@@ -6,9 +6,17 @@ import NewBrief from "../../pages/NewBrief";
 import '../../pages/pages.css';
 import { BsArrowBarRight } from "react-icons/bs";
 
+// brief description trimming function
+// call trimming function in component in map loop and add brief.description as parameter
+const descTrim = (content) => {
+  // run trimming function on string parameter
+  const trim = content[0].substring(0, 80);
+  // return trimmed string
+  return `${trim}...`;
+}
+
+
 function Sidebar({
-  // briefId, 
-  // setBriefId, 
   showBrief, 
   project
 }) {
@@ -59,8 +67,7 @@ function Sidebar({
                   {brief.title}
                 </Card.Title>
                 <Card.Text>
-                  This text will be a 100 character snippet of the brief content
-                  text.
+                 {descTrim(brief.brief_content)}
                 </Card.Text>
                 <Button 
                 id={brief._id}
@@ -68,9 +75,6 @@ function Sidebar({
                 onClick={handleBriefClick}
                 >
                   Brief
-                  {/* <Link className="text-white" to="../pages/Brief">
-                    Brief
-                  </Link> */}
                 </Button>
               </Card.Body>
             </Card>
