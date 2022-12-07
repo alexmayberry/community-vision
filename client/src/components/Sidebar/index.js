@@ -4,6 +4,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Card from "react-bootstrap/Card";
 import NewBrief from "../../pages/NewBrief";
 import '../../pages/pages.css';
+import { BsArrowBarRight } from "react-icons/bs";
 
 function Sidebar({
   // briefId, 
@@ -33,8 +34,9 @@ function Sidebar({
 
   return (
     <>
-      <Button className="sidebar-button" variant="danger" onClick={handleShow}>
-        Community Submitted Briefs
+      <Button className="sidebar-button btn-text" variant="primary" onClick={handleShow} active>
+        < BsArrowBarRight className="svg-content"/>
+        <div>Community Submitted Briefs</div>
       </Button>
       <Offcanvas show={show} onHide={handleClose} backdrop ="true" scroll="true">
         <Offcanvas.Header closeButton>

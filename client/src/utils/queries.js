@@ -22,6 +22,13 @@ export const QUERY_PROJECTS = gql`
       _id
       username
     }
+    briefs {
+      _id
+      title
+      brief_content
+      date_created
+      image_url
+    }
   }
   }
 `;

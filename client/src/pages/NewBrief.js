@@ -12,6 +12,7 @@ import { isReference, useMutation } from '@apollo/client';
 
 
 import "./pages.css";
+import { BsFillFileEarmarkPlusFill } from "react-icons/bs";
 import { useParams } from 'react-router-dom';
 import { url } from '../utils/CloudinaryService';
 
@@ -82,8 +83,9 @@ const onImageUploadHandler = (publicId, url) => {
               </p>
             ) : (
               <>
-                <Button variant="danger" onClick={handleShow}>
-                  Add a New Brief
+                <Button className="new-brief-btn btn-text" variant="success" onClick={handleShow} active>
+                < BsFillFileEarmarkPlusFill className="svg-content"/>
+                <div>Add New Brief</div>  
                 </Button>
 
                 <Modal show={show} onHide={handleClose}>

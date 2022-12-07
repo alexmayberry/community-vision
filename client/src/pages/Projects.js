@@ -15,6 +15,14 @@ const Projects = () => {
 const { loading, data } = useQuery(QUERY_PROJECTS);
 const projects = data?.projects || [];
 
+const briefsAry = [];
+if (data) {
+  for (let i = 0; i < projects.length; i++) {
+    const briefLength = projects[i].briefs.length;
+    briefsAry.push(briefLength);
+  }
+}
+
 if (loading) {
   return <div>Loading...</div>;
 }
@@ -22,10 +30,11 @@ if (loading) {
     <main>
       <Container id="projects-container">
       <Row xs={1} md={2} lg={3} xl={4}>
-          {projects.map((project) => (
+          {projects.map((project, index) => (
 
           <Col key={project._id} id="col" className="d-flex flex-column mt-auto">
             <Card id="projects-card" className="text-center mt-auto">
+              <Card.Header >{briefsAry[index]} Briefs submitted</Card.Header>
               <Card.Img id="projects-img" variant="top" src={`${project.image_url}`} />
               <Card.Body>
                 <Card.Title className="card-title bg-primary text-white">{project.title}</Card.Title>
